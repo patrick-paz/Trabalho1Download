@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -14,11 +14,11 @@ import java.net.URL;
 
 public class Download extends AsyncTask<String, Void, Bitmap> {
 
-    ImageButton downloadBtn;
+    Button downloadBtn;
     ImageView image;
     ProgressBar progress;
 
-    public Download(ImageButton downloadBtn, ImageView image, ProgressBar progress) {
+    public Download(Button downloadBtn, ImageView image, ProgressBar progress) {
         this.downloadBtn = downloadBtn;
         this.image = image;
         this.progress = progress;
